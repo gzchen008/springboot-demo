@@ -7,5 +7,14 @@ CREATE TABLE `city` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS  `user`;
+CREATE TABLE `user` (
+  `id` bigint(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '',
+  `name` varchar(100) unsigned  NOT NULL COMMENT '',
+  `age` int(11) DEFAULT NULL COMMENT '年龄',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+INSERT user Values(1,'CGZ',39);
 
 INSERT city VALUES (1 ,1,'温岭市','BYSocket 的家在温岭。');
